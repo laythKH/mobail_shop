@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* sass Template */
+/* global classes */
+button, button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* typography classes  */
+.font-mont {
+  font-family: "Montserrat", cursive;
+}
+
+.font-size-12 {
+  font-size: 12px;
+}
+
+.font-size-14 {
+  font-size: 14px;
+}
+
+.font-size-16 {
+  font-size: 16px;
+}
+
+.font-size-20 {
+  font-size: 20px;
+}
+
+.font-size-xxxl {
+  font-size: 100px;
+}
+
+.bg-indigo-50 {
+  background-color: #e8eaf6;
+}
+
+.bg-indigo-100 {
+  background-color: #c5cae9;
+}
+
+.bg-indigo-200 {
+  background-color: #9fa8da;
+}
+
+.bg-indigo-300 {
+  background-color: #7986cb;
+}
+
+.bg-indigo-400 {
+  background-color: #5c6bc0;
+}
+
+.bg-indigo-500 {
+  background-color: #3f51b5;
+}
+
+.bg-indigo-600 {
+  background-color: #3949ab;
+}
+
+.bg-indigo-700 {
+  background-color: #303f9f;
+}
+
+.bg-indigo-800 {
+  background-color: #283593;
+}
+
+.bg-indigo-900 {
+  background-color: #1a237e;
+}
+
+.bg-green-300 {
+  background-color: #a5d6a7;
+}
+
+.bg-grey-100 {
+  background-color: #f5f5f5;
+}
+
+.landing-page {
+  height: calc(100vh - 85px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assests/bg-landing-page.jpg");
+  background-size: cover;
+  position: relative;
+  background-color: #eceff1;
+}
+
+.landing-page-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  z-index: 2;
+}
+
+.landing-page-content > div {
+  padding: 10px 20px;
+  overflow: hidden;
+  width: auto;
+  transition: width 4s ease;
+}
+
+.landing-page-content > div .content {
+  display: none;
+}
+
+.landing-page-content > div.full-width .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.full-width {
+  width: 100% !important;
+}
+
+@keyframes expandWidth {
+  0% {
+    width: auto;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.swiper {
+  width: 100%;
+  height: 400px;
+}
+
+.mobile-card {
+  position: relative;
+}
+
+.mobile-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.mobile-card .mobile-info {
+  position: absolute;
+  z-index: 100;
+  bottom: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #eceff1;
+  padding: 10px;
+  transition: 0.5s;
+  border-radius: 8px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.mobile-card .mobile-info i {
+  color: yellow;
+}
+
+.mobile-card:hover .mobile-info {
+  bottom: 8px;
+}
+
+/*# sourceMappingURL=style.css.map */
